@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Timeline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+        
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 50px auto;
+            padding: 40px 0;
+            width: 100%;
+            max-width: 1000px;
+            box-sizing: border-box;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #c5c5c5;
+            transform: translateX(-50%);
+        }
+
+        .timeline ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline ul li {
+            list-style: none;
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .timeline ul li.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline ul li:nth-child(odd) {
+            float: left;
+            text-align: right;
+            clear: both;
+            transform: translateX(-50px);
+        }
+
+        .timeline ul li:nth-child(even) {
+            float: right;
+            text-align: left;
+            clear: both;
+            transform: translateX(50px);
+        }
+
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline ul li:nth-child(odd)::before,
+        .timeline ul li:nth-child(even)::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: 24px;
+            background: #e92163;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+        }
+
+        .timeline ul li:nth-child(odd)::before {
+            right: -6px;
+        }
+
+        .timeline ul li:nth-child(even)::before {
+            left: -6px;
+        }
+
+        .time {
+            background: #e92163;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 18px;
+            box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+            font-size: 14px;
+        }
+
+        .timeline ul li:nth-child(odd) .time {
+            position: absolute;
+            top: 12px;
+            right: -165px;
+        }
+
+        .timeline ul li:nth-child(even) .time {
+            position: absolute;
+            top: 12px;
+            left: -165px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .timeline:before {
+                left: 20px;
+            }
+
+            .timeline ul li {
+                width: 100%;
+                text-align: left;
+                padding-left: 50px;
+                padding-bottom: 50px;
+                transform: translateX(-30px);
+            }
+
+            .timeline ul li:nth-child(odd)::before,
+            .timeline ul li:nth-child(even)::before {
+                left: 16px;
+            }
+
+            .timeline ul li:nth-child(odd) .time,
+            .timeline ul li:nth-child(even) .time {
+                left: 50px;
+                right: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animated Vertical Timeline</h1>
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="content">
+                    <h3>Event 1</h3>
+                    <p>Description of event 1.</p>
+                </div>
+                <div class="time">January 2018</div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Event 2</h3>
+                    <p>Description of event 2.</p>
+                </div>
+                <div class="time">February 2018</div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Event 3</h3>
+                    <p>Description of event 3.</p>
+                </div>
+                <div class="time">March 2018</div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Event 4</h3>
+                    <p>Description of event 4.</p>
+                </div>
+                <div class="time">April 2018</div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Event 5</h3>
+                    <p>Description of event 5.</p>
+                </div>
+                <div class="time">May 2018</div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function revealTimelineItems() {
+            let items = document.querySelectorAll('.timeline ul li');
+
+            items.forEach((item) => {
+                let rect = item.getBoundingClientRect();
+                let windowHeight = window.innerHeight;
+
+                if (rect.top < windowHeight - 100) {
+                    item.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealTimelineItems);
+        window.addEventListener('load', revealTimelineItems);
+    </script>
+</body>
+</html>

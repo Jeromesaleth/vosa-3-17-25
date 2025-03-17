@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- site metas -->
+    <title>VOSA TECH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site icons -->
+    <link rel="icon" href="./img/vosa v@300x.png" type="image/gif" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- brand Area link start-->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- logo Font style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <!-- brand Area link end -->
+
+    <style>
+        /* brand start  */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .brand_area {
+            /* background-color: #; */
+            padding: 50px 15px;
+        }
+
+        .brand_area h4 {
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .brand_wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .brand_active .single_brand {
+            text-align: center;
+        }
+
+        .brand_active .single_brand img {
+            max-width: 100%;
+            height: auto;
+            filter: brightness(0.9);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .brand_active .single_brand img:hover {
+            filter: brightness(1);
+        }
+
+        /* end brand */
+    </style>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="bg_load" id="loader">
+        <img class="loader_animation" src="./img/vosa v@300x.png" alt="Loading..." />
+    </div>
+    <!-- End Loader -->
+
+    <style>
+        /* Center the loader on the page */
+        .bg_load {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            /* Optional background color for the loader */
+            z-index: 9999;
+        }
+
+        /* Loader animation (VOSA image only) */
+        .loader_animation {
+            width: 100px;
+            /* Adjust size of the image */
+            height: auto;
+            animation-name: rotatey;
+            /* Rotate animation */
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        /* Keyframes for rotating animation */
+        @keyframes rotatey {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Hide loader when finished */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+
+    <script>
+        // Hide the loader after 1 second
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000); // 1 second delay
+        });
+    </script>
+
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+        </div>
+        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg  navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+        style="background-color: #0816D3; " data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="./img/vosa v@300x.png" alt="VOSA Tech" style="height: 80px;">
+            <span class="ms-2 vosa-tech-text">VOSA TECH</span>
+        </a>
+        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto p-3 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About Us</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                <a href="internship.html" class="nav-item nav-link">Internship</a>
+                <a href="products.html" class="nav-item nav-link">Products</a>
+                <a href="gallary.html" class="nav-item nav-link ">Gallary</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <!-- <a href="contact.html#contactForm" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Get
+                Started</a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+
+   
+
+
+
+    <!-- Designing Web Excellence end -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center row-reverse">
+                <!-- Left Section: 2 Rows of Cards -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <!-- First Card -->
+                        <div class="col-md-6">
+                            <div class="card h-100"
+                                style="min-height: 220px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border-radius: 15px;">
+                                <div class="card-body text-center"
+                                    style="background-color: #E73879 ; border-radius: 15px;">
+                                    <div class="icon-circle mb-3"
+                                        style="background: #0dcaf0; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; justify-content: center; align-items: center;">
+                                        <i class="fas fa-laptop-code" style="font-size: 24px; color: #ffffff;"></i>
+                                    </div>
+                                    <h5 class="card-title mt-3 text-light">Innovative Solutions</h5>
+                                    <p class="card-text text-light">We bring your ideas to life with cutting-edge
+                                        technology and innovative designs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Second Card -->
+                        <div class="col-md-6">
+                            <div class="card h-100"
+                                style="min-height: 250px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border-radius: 15px; background-color: #4335A7; ">
+                                <div class="card-body text-center">
+                                    <div class="icon-circle mb-3"
+                                        style="background: #00aaff; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; justify-content: center; align-items: center;">
+                                        <i class="fas fa-project-diagram" style="font-size: 24px; color: #ffffff;"></i>
+                                    </div>
+                                    <h5 class="card-title mt-3 text-light">Customized Strategies</h5>
+                                    <p class="card-text text-light">Our tailored strategies focus on your goals and
+                                        ensure business growth.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Card -->
+                        <div class="col-md-6">
+                            <div class="card h-100"
+                                style="min-height: 180px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border-radius: 15px; background-color: #88C273;">
+                                <div class="card-body text-center">
+                                    <div class="icon-circle mb-3"
+                                        style="background: #f39c12; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; justify-content: center; align-items: center;">
+                                        <i class="fas fa-cogs" style="font-size: 24px; color: #ffffff;"></i>
+                                    </div>
+                                    <h5 class="card-title mt-3 text-light">Full-Stack Expertise</h5>
+                                    <p class="card-text text-light">We deliver end-to-end solutions with full-stack
+                                        expertise in every domain.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Card -->
+                        <div class="col-md-6">
+                            <div class="card h-100"
+                                style="min-height: 220px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border-radius: 15px; background-color: #FF7F3E ;">
+                                <div class="card-body text-center">
+                                    <div class="icon-circle mb-3"
+                                        style="background: #2ecc71; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; justify-content: center; align-items: center;">
+                                        <i class="fas fa-chart-line" style="font-size: 24px; color: #ffffff;"></i>
+                                    </div>
+                                    <h5 class="card-title mt-3 text-light">Scalable Growth</h5>
+                                    <p class="card-text text-light">With flexible and scalable solutions, we empower
+                                        your business to grow dynamically.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section: Text Content -->
+                <div class="col-lg-6" style="padding-bottom: 15%;">
+                    <h6 class="section-title bg-white text-start  pe-3" style="color: #0816D3;">ABOUT US</h6>
+                    <h1 class="display-6 mb-4">Designing <span class="text-primary">Web Excellence</span></h1>
+                    <p class="mb-4">Like great cooks, our experienced web / Mobile App developers and creative website
+                        designers in Tirunelveli have perfected the recipe of web application development that blends
+                        content, design and marketing to create an excellent website for you.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Tailored strategies for
+                            unique needs</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Cutting-edge tools and
+                            technology</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Dedicated support and seamless
+                            communication</li>
+                    </ul>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="contectForm">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Designing Web Excellence end -->
+ <!-- 3 Card Section Start -->
+ <div class="container py-5">
+    <div class="text-center mb-5">
+        <h6 class="section-title bg-white text-center px-3 animate__animated animate__fadeInUp"
+            style="color: #0816D3;">VOSA Features</h6>
+        <h1 class="display-6 animate__animated animate__fadeInDown ">Our Mission, <span class="text-primary">Vision
+                & Values</span></h1>
+    </div>
+    <div class="row g-4">
+        <!-- First Card - Mission -->
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="card h-100 border-0 service-card">
+                <div class="card-body text-center">
+                    <div class="icon-box mb-4">
+                        <i class="fas fa-rocket fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="card-title">Our Mission</h5>
+                    <p class="card-text">
+                        Our mission is to empower business growth of our clients with creative design, development,
+                        and high-quality solutions in the marketplace. Take advantage of our values and reliable
+                        competitive strategies to meet digital needs of your business growth globally.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card - Vision -->
+        <div class="col-md-4 wow fadeInUp " data-wow-delay="0.3s">
+            <div class="card h-100 border-0 service-card ">
+                <div class="card-body text-center">
+                    <div class="icon-box mb-4">
+                        <i class="fas fa-eye fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="card-title">Our Vision</h5>
+                    <p class="card-text">
+                        Our main aim is to develop expertise and intuitive solutions for our clients. We have an
+                        expert team of professionals, who can turn your vision into reality with their collective
+                        experiences, and outstanding talent to accelerate your business growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Third Card - Values -->
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="card h-100 border-0 service-card">
+                <div class="card-body text-center">
+                    <div class="icon-box mb-4">
+                        <i class="fas fa-gem fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="card-title">Our Values</h5>
+                    <p class="card-text">
+                        We provide customized solutions based on your scale and requirements. We design smart and
+                        in-trend solutions fast for all types of devices, projects, and companies. We start by
+                        mapping a strategy according to your business needs, and develop your dream project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The styles for the service cards -->
+<style>
+    /* Styling for the service cards */
+    .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        background-color: #ffffff;
+        /* Default card background */
+        color: #333333;
+        /* Default font color */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Odd cards hover - background color: #009CFF */
+    .service-card:nth-child(odd):hover {
+        transform: translateY(-10px);
+        background-color: #009CFF;
+        /* Light blue background for odd cards */
+        color: #ffffff;
+        /* White font color on hover */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Even cards hover - background color: #0816D3 */
+    .service-card:nth-child(even):hover {
+        transform: translateY(-10px);
+        background-color: #0816D3;
+        /* Dark blue background for even cards */
+        color: #ffffff;
+        /* White font color on hover */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(0, 123, 255, 0.1);
+        /* Light blue background */
+        border-radius: 50%;
+        margin: 0 auto;
+        transition: background-color 0.3s ease;
+    }
+
+    .service-card:hover .icon-box {
+        background-color: #ffffff;
+        /* White background for the icon on hover */
+    }
+
+    .service-card h5,
+    .service-card p {
+        transition: color 0.3s ease;
+    }
+
+    .service-card:hover h5,
+    .service-card:hover p {
+        color: #ffffff;
+        /* White text on hover */
+    }
+</style>
+
+
+
+<!-- 3 Card Section End -->
+
+
+
+<!-- poster start -->
+<div class="container-xxl py-5  ">
+    <div class="we-can d-flex justify-content-around align-items-center" style="background-color: #0dcaf0;">
+        <!-- <div class="lightImg">
+        <img src="img/light.png" alt="">
+    </div> -->
+        <div class="contents ">
+            <!--             <h6 class="text-white d-flex justify-content-center">HERE’S WHAT WE CAN DO FOR YOU</h6>
+-->
+            <h1 class=" customized-h1 d-flex align-items-center justify-content-center"
+                style="height: 100px; width: 100px;">We <span style="padding-left: 10px; padding-right: 10px;">
+                    Promise.</span> We <span style="padding-left: 10px;"> Deliver.</span></h1>
+            <!--             <h1 class="text-white d-flex justify-content-center"> A High-Quality Website</h1>
+-->
+
+        </div>
+        <!-- <div class="get- lets">
+        <button class="text-primary bg-white border border-white" style="height: 50px; width: 100px;">Let's Talk</button>
+    </div> -->
+
+        <div class="get-lets text-center">
+            <button class=" btn btn-primary text-primary bg-white border border-white"
+                style="height: 50px; width: 100px;">
+                Let's Talk
+            </button>
+        </div>
+
+    </div>
+</div>
+<!-- poster end -->
+
+<!-- Facts Start -->
+<!-- <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="fact-item bg-light rounded text-center h-100 p-5">
+                    <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                    <h5 class="mb-3">Years Experience</h5>
+                    <h1 class="display-5 mb-0" data-toggle="counter-up">2</h1>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="fact-item bg-light rounded text-center h-100 p-5">
+                    <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
+                    <h5 class="mb-3">Team Members</h5>
+                    <h1 class="display-5 mb-0" data-toggle="counter-up">10</h1>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="fact-item bg-light rounded text-center h-100 p-5">
+                    <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                    <h5 class="mb-3">Satisfied Clients</h5>
+                    <h1 class="display-5 mb-0" data-toggle="counter-up">34</h1>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="fact-item bg-light rounded text-center h-100 p-5">
+                    <i class="fa fa-check fa-4x text-primary mb-4"></i>
+                    <h5 class="mb-3">Projects Done</h5>
+                    <h1 class="display-5 mb-0" data-toggle="counter-up">35</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Facts End -->
+
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container row-reverse">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="">
+                    <!-- <img class="img-fluid" src="img/about.jpg" alt=""> -->
+                    <img class="Industries-img" src="img/about-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="h-100">
+                    <h6 class="section-title bg-white text-start pe-3" style="color:#0816D3 ;">About Us</h6>
+                    <h1 class="display-6 mb-4">We made our dreams a reality <span class="text-primary">Now we can
+                            make yours too</span></h1>
+                    <p>We’re VOSA Tech, an established Tirunelveli web / Mobile App development company, and we are
+                        the result of people who believed in a great dream. We have lent a helping hand to
+                        businesses looking for a creative solution to their web development needs.</p>
+                    <p class="mb-4">Excellence is not just what you get when you work with us, it’s what you start
+                        to believe in.</p>
+                    <!-- <div class="d-flex align-items-center mb-4 pb-2">
+                        <img class="flex-shrink-0 rounded-circle" src="img/Valli-md.jpg" alt="" style="width: 50px; height: 50px;">
+                        <div class="ps-4">
+                            <h6>Valli</h6>
+                            <small>Managing Director</small>
+                        </div>
+                    </div> -->
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Feature Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="h-100">
+                    <h6 class="section-title bg-white text-start  pe-3 " style="color: #0816D3;">OUR FEATURES</h6>
+                    <h1 class="display-6 mb-4">Our beliefs are <span class="text-primary">what drive us</span> </h1>
+                    <p class="mb-4"> VOSA Tech believes that cultivating a fair, intelligent, and
+                        professionally-sound workflow in our website design and website development processes best
+                        positions our clients and ourselves for success. We have built our business on core values
+                        and ethics that contribute to this winning formula.</p>
+                    <!-- <div class="row g-4">
+                        <div class="col-12">
+                            <div class="skill">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Website Development</p>
+                                    <p class="mb-2">90%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="skill">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Mobile App Development</p>
+                                    <p class="mb-2">85%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="skill">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Design & Development</p>
+                                    <p class="mb-2">95%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="service.html">Our Services</a>
+
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="img-borde">
+                    <img class="Industries-img" src="img/about-2.jpg" alt="" style="height:390px ;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+
+<!-- OUR TOOLS & TECHNOLOGIES start -->
+<div id="diplayHide" class="container-xxl py-5">
+    <div class="we-can d-flex justify-content-around align-items-center">
+        <div class="contents text-center toolTech" style="flex: 1;">
+            <h6 class="text-uppercase display-6 animate__animated animate__fadeInDown " style="font-weight: 800;">
+                OUR TOOLS & TECHNOLOGIES</h6>
+            <h1 class="mb-4 text-dark">We Hold Expertise in</h1>
+            <h1 class="mb-5">The Following Platforms</h1>
+            <div class="row g-4">
+                <!-- Card 1: Requirement -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center"
+                        style="border-radius: 15px; transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#009CFF'; this.style.color='#ffffff'; this.style.transform='translateY(-10px)';"
+                        onmouseout="this.style.backgroundColor=''; this.style.color=''; this.style.transform='';">
+                        <div class="card-body">
+                            <div class="icon-circle mb-3">
+                                <i class="fas fa-list" onmouseover="this.style.backgroundColor='#ffffff'; "
+                                    onmouseout="this.style.backgroundColor='';"></i>
+                            </div>
+                            <h5 class="card-title mt-3">Requirement</h5>
+                            <p class="card-text">Gathering all essential information and insights to define project
+                                objectives and scope effectively.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Plan and Blueprint -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center"
+                        style="border-radius: 15px; transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#0816D3'; this.style.color='#ffffff'; this.style.transform='translateY(-10px)';"
+                        onmouseout="this.style.backgroundColor=''; this.style.color=''; this.style.transform='';">
+                        <div class="card-body">
+                            <div class="icon-circle mb-3">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <h5 class="card-title mt-3">Plan and Blueprint</h5>
+                            <p class="card-text">Creating a detailed strategy and architectural blueprint to guide
+                                the development process efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Design and Development -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center"
+                        style="border-radius: 15px; transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#009CFF'; this.style.color='#ffffff'; this.style.transform='translateY(-10px)';"
+                        onmouseout="this.style.backgroundColor=''; this.style.color=''; this.style.transform='';">
+                        <div class="card-body">
+                            <div class="icon-circle mb-3">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h5 class="card-title mt-3">Design and Development</h5>
+                            <p class="card-text">Crafting visually engaging designs and building robust, scalable
+                                solutions tailored to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Test and Implement -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 text-center"
+                        style="border-radius: 15px; transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#0816D3'; this.style.color='#ffffff'; this.style.transform='translateY(-10px)';"
+                        onmouseout="this.style.backgroundColor=''; this.style.color=''; this.style.transform='';">
+                        <div class="card-body">
+                            <div class="icon-circle mb-3">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h5 class="card-title mt-3">Test and Implement</h5>
+                            <p class="card-text">Ensuring quality assurance through testing and deploying the final
+                                product seamlessly into production.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Section Background */
+    .we-can {
+        background: linear-gradient(to right, #003399, #00aaff);
+        padding: 50px;
+    }
+
+    /* Card Styling */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        background-color: #ffffff;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        background-color: #003399;
+        color: #ffffff;
+    }
+
+    .card:hover .card-title,
+    .card:hover .card-text {
+        color: #ffffff;
+    }
+
+    /* Icon Styling */
+    .icon-circle {
+        background: #ffffff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .card:hover .icon-circle {
+        background: #00aaff;
+    }
+
+    .icon-circle i {
+        color: #003399;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+    .card:hover .icon-circle i {
+        color: #ffffff;
+    }
+
+    /* Heading Styling */
+    .contents h6 {
+        letter-spacing: 2px;
+        color: #ffffff;
+    }
+
+    .contents h1 {
+        color: #ffffff;
+    }
+</style>
+
+
+<!-- OUR TOOLS & TECHNOLOGIES end -->
+
+    <!-- HERE’S WHAT WE CAN DO FOR YOU start -->
+
+
+    <div class="container-xxl py-5 d-flex justify-content-around align-items-center gradient-primary hersWhat">
+        <!-- Text Content -->
+        <div class="poster2 text-center">
+            <h6 class="text-light">HERE’S WHAT WE CAN DO FOR YOU</h6>
+            <h1 class="text-light">Win Customers And Stand <br>Strong In Your Market</h1>
+        </div>
+
+        <!-- Rocket Image -->
+        <div class="rocket-img">
+            <img src="https://www.zaroid.com/wp-content/uploads/2021/02/CTA-1.png" alt="Rocket">
+        </div>
+
+        <!-- Button -->
+        <div class="Project-btn">
+            <button>Start a Project</button>
+        </div>
+    </div>
+
+    <style>
+        /* Add Gradient Background */
+        .gradient-primary {
+            background: linear-gradient(135deg, #0d6efd, #6610f2, #0dcaf0, #ffc107);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            border-radius: 50px;
+            height: min-content;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Button Styling */
+        .Project-btn button {
+            background-color: #ffffff;
+            color: #0d6efd;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .Project-btn button:hover {
+            background-color: #0d6efd;
+            color: #ffffff;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        /* Image Styling */
+        .rocket-img img {
+            max-width: 100%;
+            height: 200px;
+        }
+    </style>
+
+
+<!-- Start Timeline -->
+    <!-- Start Timeline -->
+       <!-- Start Timeline -->
+       <!-- <div class="container-fluid py-5">
+        <div class="history-tl-container">
+            <h1 class="display-6 mb-4 text-center">Timeline</h1>
+            <ul class="tl">
+                <li class="tl-item">
+                    <div class="timestamp">
+                        3rd March 2015<br> 7:00 PM
+                    </div>
+                    <div class="item-title">Start from Shire</div>
+                    <div class="item-detail">Don't forget the ring Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates rerum aspernatur fugit at consequuntur eum, ut incidunt fugiat vitae suscipit! Saepe delectus quibusdam numquam eum, debitis veniam. Itaque, obcaecati expedita.</div>
+                </li>
+                <li class="tl-item">
+                    <div class="timestamp">
+                        19th March 2015<br> 3:00 PM
+                    </div>
+                    <div class="item-title">Kill some Orcs</div>
+                    <div class="item-detail">Don't enter the caves!! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque iusto harum perferendis cupiditate incidunt optio tempora atque! Harum officia expedita sunt! Odit eos mollitia quaerat in rerum ipsum facilis nihil!</div>
+                </li>
+                <li class="tl-item">
+                    <div class="timestamp">
+                        1st June 2015<br> 7:00 PM
+                    </div>
+                    <div class="item-title">Throw that goddamn ring in the lava</div>
+                    <div class="item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium, culpa necessitatibus minus magni ipsum eius voluptatibus voluptatem molestiae minima soluta asperiores dolorem at neque sunt consectetur mollitia reprehenderit dolores.</div>
+                </li>
+                <li class="tl-item">
+                    <div class="timestamp">
+                        3rd March 2015<br> 7:00 PM
+                    </div>
+                    <div class="item-title">Start from Shire</div>
+                    <div class="item-detail">Don't forget the ring Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates rerum aspernatur fugit at consequuntur eum, ut incidunt fugiat vitae suscipit! Saepe delectus quibusdam numquam eum, debitis veniam. Itaque, obcaecati expedita.</div>
+                </li>
+                <li class="tl-item">
+                    <div class="timestamp">
+                        19th March 2015<br> 3:00 PM
+                    </div>
+                    <div class="item-title">Kill some Orcs</div>
+                    <div class="item-detail">Don't enter the caves!! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque iusto harum perferendis cupiditate incidunt optio tempora atque! Harum officia expedita sunt! Odit eos mollitia quaerat in rerum ipsum facilis nihil!</div>
+                </li>
+                <li class="tl-item">
+                    <div class="timestamp">
+                        1st June 2015<br> 7:00 PM
+                    </div>
+                    <div class="item-title">Throw that goddamn ring in the lava</div>
+                    <div class="item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium, culpa necessitatibus minus magni ipsum eius voluptatibus voluptatem molestiae minima soluta asperiores dolorem at neque sunt consectetur mollitia reprehenderit dolores.</div>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+    <!-- End Timeline -->
+
+  <style>
+   
+
+.history-tl-container {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: block;
+  position: relative;
+  background: #F7F7F7;
+  padding: 20px;
+}
+
+.history-tl-container ul.tl {
+  margin: 20px 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.history-tl-container ul.tl li {
+  list-style: none;
+  margin: auto;
+  position: relative;
+  border-left: 1px dashed #86D6FF;
+  padding: 0 0 50px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .history-tl-container ul.tl li {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .history-tl-container ul.tl li {
+    margin-left: 30px;
+  }
+  
+  .history-tl-container ul.tl li .timestamp {
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  /* ul.tl li .item-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+} */
+
+ul.tl li .item-detail {
+    text-align: justify;
+    width: 13rem !important;
+}
+}
+
+.history-tl-container ul.tl li:last-child {
+  border-left: 0;
+}
+
+.history-tl-container ul.tl li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 0.74);
+  border-radius: 500%;
+  background: #258CC7;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.history-tl-container ul.tl li:hover::before {
+  border-color: #258CC7;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.tl li .item-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+ul.tl li .item-detail {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+ width: 40rem;
+ text-align: justify;
+}
+
+/* ul.tl li .timestamp {
+  color: #8D8D8D;
+  position: absolute;
+  width: 100px;
+  left: -50%;
+  text-align: right;
+  font-size: 12px;
+  margin-left: 40px;
+} */
+ul.tl li .timestamp {
+  color: #8D8D8D;
+  position: absolute;
+  width: 120px;
+  left: -187px; /* Adjust this value */
+  text-align: right;
+  font-size: 12px;
+  margin-left: 0;
+}
+
+  </style>
+    <!-- End Timeline -->
+
+
+<!-- End Timeline -->
+
+    <!-- HERE’S WHAT WE CAN DO FOR YOU End -->
+
+    <div class="achivement-form container-xxl py-5 d-flex align-items-center justify-content-around"
+        style="background-color: #CFFDE1; margin-top: 50px;">
+        <div class="achivement-img">
+            <img src="https://www.zaroid.com/wp-content/uploads/2022/08/New-Project-1-1.png" alt="">
+        </div>
+
+        <form id="achievementForm">
+            <div class="text-center mb-5">
+                <h6 class="section-title text-center text-primary px-3 animate__animated animate__fadeInUp ourAchievement"
+                    style="background-color: #CFFDE1; ">OUR ACHIEVEMENT & SUCCESS</h6>
+                <h1 class="display-6 animate__animated animate__fadeInDown ourAchievement">We’d love to hear from you!
+                </h1>
+            </div>
+            <div class="mb-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="appointment_name" placeholder="Name"
+                        pattern="^[A-Za-z\s]+$" required title="Please enter letters only.">
+                    <small id="nameError" class="text-danger"></small>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Phone Number *" class="form-control" id="phoneNumber" pattern="^\d{10}$"
+                    title="Phone number must be 10 digits" required>
+                <small id="phoneError" class="text-danger"></small>
+            </div>
+            <div class="mb-3">
+                <input type="email" placeholder="Email *" class="form-control" id="email"
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address" required>
+                <small id="emailError" class="text-danger"></small>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Message *" class="form-control" id="message" required>
+                <small id="messageError" class="text-danger"></small>
+            </div>
+            <div class="sendWhatsApp-btn">
+                <button type="button" class="gradient-primary btn btn-primary py-3"
+                    style="margin-left: 420px; font-weight: bold;" id="sendWhatsApp">Send Request</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('sendWhatsApp').addEventListener('click', function () {
+            // Get form data
+            const name = document.getElementById('appointment_name').value.trim();
+            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Error fields
+            const nameError = document.getElementById('nameError');
+            const phoneError = document.getElementById('phoneError');
+            const emailError = document.getElementById('emailError');
+            const messageError = document.getElementById('messageError');
+
+            // Clear previous errors
+            nameError.textContent = '';
+            phoneError.textContent = '';
+            emailError.textContent = '';
+            messageError.textContent = '';
+
+            // Validation
+            let isValid = true;
+
+            if (!name) {
+                nameError.textContent = 'Name is required';
+                isValid = false;
+            }
+
+            if (!phoneNumber || !/^\d{10}$/.test(phoneNumber)) {
+                phoneError.textContent = 'Enter a valid 10-digit phone number';
+                isValid = false;
+            }
+
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                emailError.textContent = 'Enter a valid email address';
+                isValid = false;
+            }
+
+            if (!message) {
+                messageError.textContent = 'Message is required';
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Format WhatsApp message
+                const whatsappMessage = `Hello, I would like to connect with you. Here are my details:\n\n` +
+                    `Name: ${name}\n` +
+                    `Phone Number: ${phoneNumber}\n` +
+                    `Email: ${email}\n` +
+                    `Message: ${message}`;
+
+                // WhatsApp URL
+                const whatsappNumber = '917358218282'; // Replace with your WhatsApp number
+                const whatsappURL = `https://wa.me/917358218282?text=${encodeURIComponent(whatsappMessage)}`;
+
+                // Redirect to WhatsApp
+                window.open(whatsappURL, '_blank');
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        $(document).ready(function () {
+            // Initialize the Owl Carousel
+            $('.brand_active').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplaySpeed: 1500,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1024: {
+                        items: 6
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Footer Start -->
+    <!-- Wave Animation Start -->
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <!-- Wave Animation End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="row g-5" style="display: flex; align-items: flex-start; justify-content: space-around;">
+                <!-- Google Map -->
+                <div class="col-lg-3 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27996.49270843182!2d77.7733891115278!3d8.719129084984187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b040d055a212ee3%3A0xb6adb845063d46b6!2sBhogar%20Bakers!5e0!3m2!1sen!2sin!4v1733983836463!5m2!1sen!2sin"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Contact Us</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>158/6, R.J.S. Complex,</p>
+                    <p class="mb-2" style="font-size: 15px; margin-left: 31px;"> KTC Nager, Tirunelveli - 627011.</p>
+                    <p class="mb-2">
+                        <i class="fa fa-mobile me-3" aria-hidden="true"></i>
+                        <a href="tel:+917358218282" style="text-decoration: none; color: #777777;">+91 7358218282</a>
+                    </p>
+                    <!-- <p class="mb-2">
+                        <i class="fas fa-globe me-3"></i>
+                        <a href="https://www.vosatech.com/" style="text-decoration: none; color: #777777;"
+                            target="_blank">https://www.vosatech.com/</a>
+                    </p> -->
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://x.com/VosaTech" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.facebook.com/profile.php?id=61569960538255" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.linkedin.com/in/vosa-tech-4b28ab331/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.instagram.com/vosa.tech/?igsh=MXRndWJpbGdtZ255Zg%3D%3D#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle" href="https://wa.me/917358218282"
+                            target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column">
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="service.html">Our Services</a>
+                        <a class="btn btn-link" href="portfolio.html">Portfolio</a>
+                        <a class="btn btn-link" href="internship.html">Internship</a>
+                        <a class="btn btn-link" href="products.html">Product</a>
+                        <a class="btn btn-link" href="gallary.html">Gallary</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright text-center">
+            <p class="mb-0">&copy; <a href="#">2024 | VOSA Tech IT Services. </a> All Rights Reserved. </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Inline CSS for Wave Animation -->
+    <style>
+        /* Wave Animation Styles */
+        .waves {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('https://i.ibb.co/wQZVxxk/wave.png') repeat-x;
+            background-size: 1000px 100px;
+        }
+
+        #wave1 {
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWaves 4s linear infinite;
+        }
+
+        #wave2 {
+            z-index: 999;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: animate 4s linear infinite !important;
+        }
+
+        #wave3 {
+            z-index: 1000;
+            opacity: 0.2;
+            bottom: 15px;
+            animation: animateWaves 3s linear infinite;
+        }
+
+        #wave4 {
+            z-index: 999;
+            opacity: 0.7;
+            bottom: 20px;
+            animation: animate 3s linear infinite;
+        }
+
+        @keyframes animateWaves {
+            0% {
+                background-position-x: 1000px;
+            }
+
+            100% {
+                background-position-x: 0px;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: -1000px;
+            }
+
+            100% {
+                background-position-x: 0px;
+            }
+        }
+    </style>
+
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

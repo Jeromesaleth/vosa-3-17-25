@@ -1,0 +1,947 @@
+<!-- 7358218282 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- site metas -->
+    <title>VOSA TECH</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- site icons -->
+    <link rel="icon" href="./img/vosa v@300x.png" type="image/gif" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- brand Area link start-->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- logo Font style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <!-- brand Area link end -->
+
+    <style>
+        .project-item img {
+            width: 100%;
+            /* Ensure the image spans the full width of its container */
+            height: 200px;
+            /* Set a fixed height */
+            object-fit: cover;
+            /* Ensures the image scales properly without distortion */
+            border-radius: 8px;
+            /* Optional: Maintain rounded corners */
+        }
+
+        /* brand start  */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .brand_area {
+            background-color: #;
+            padding: 50px 15px;
+        }
+
+        .brand_area h4 {
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .brand_wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .brand_active .single_brand {
+            text-align: center;
+        }
+
+        .brand_active .single_brand img {
+            max-width: 100%;
+            height: auto;
+            filter: brightness(0.9);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .brand_active .single_brand img:hover {
+            filter: brightness(1);
+        }
+
+        /* end brand */
+
+        /* responsice  start*/
+        /* Default Styles */
+
+
+
+
+        /* responsice  end */
+    </style>
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <!-- Loader -->
+    <!-- Loader -->
+    <div class="bg_load" id="loader">
+        <img class="loader_animation" src="./img/vosa v@300x.png" alt="Loading..." />
+    </div>
+    <!-- End Loader -->
+
+    <style>
+        /* Center the loader on the page */
+        .bg_load {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            /* Optional background color for the loader */
+            z-index: 9999;
+        }
+
+        /* Loader animation (VOSA image only) */
+        .loader_animation {
+            width: 100px;
+            /* Adjust size of the image */
+            height: auto;
+            animation-name: rotatey;
+            /* Rotate animation */
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        /* Keyframes for rotating animation */
+        @keyframes rotatey {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Hide loader when finished */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+
+    <script>
+        // Hide the loader after 1 second
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000); // 1 second delay
+        });
+    </script>
+
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+        </div>
+        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg  navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+        style="background-color: #0816D3; " data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="./img/vosa v@300x.png" alt="VOSA Tech" style="height: 80px;">
+            <span class="ms-2 vosa-tech-text">VOSA TECH</span>
+        </a>
+        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto p-3 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                <a href="internship.html" class="nav-item nav-link">Internship</a>
+                <a href="products.html" class="nav-item nav-link active">Products</a>
+                <a href="gallary.html" class="nav-item nav-link ">Gallary</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <!-- <a href="contact.html#contactForm" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Get
+                Started</a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="wrapper">
+        <!-- Navbar Start -->
+
+        <!-- Navbar End -->
+        <div class="overlay"></div>
+
+        <div class="inner">
+            <!-- <h1 class="title">
+                Automated AI code reviews for
+                <span class="highlight">any stack</span>
+            </h1> -->
+            <h1 class="title">
+               Gold loan 
+                <span class="highlight">software</span>
+            </h1>
+
+            <div class="container">
+                <p class="description">
+                    helps manage the process of lending money against gold collateral.
+                    It can help with loan origination, customer verification, loan disbursement, and more. 
+                </p>
+            </div>
+
+            <div class="controls">
+                <button class="control primary">Get started</button>
+                <a target="_blank" href="https://youtu.be/AWhR4Ho6cnA?si=o9kPWkqiZaMl19Ww"><button class="control secondary">Live demo</button></a>
+                
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Hero Section Styles */
+
+        .wrapper {
+            position: relative;
+            padding: 180px 20px;
+            background-image: url("https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=980&q=80");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: 1;
+        }
+
+        .inner {
+            position: relative;
+            z-index: 2;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #FFD700;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #ddd;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .control {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .primary {
+            background-color: white;
+            color: black;
+        }
+
+        .secondary {
+            background-color: rgba(255, 255, 255, 0.4);
+            color: white;
+        }
+
+        .secondary:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 28px;
+            }
+
+            .controls {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .control {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+    <!-- Navbar End -->
+
+
+
+
+
+
+  
+  
+    
+
+    <!-- <div class="icon-explain d-flex flex-column align-items-center justify-content-center text-center py-5">
+        <div class="explain-item d-flex align-items-center text-start mb-4" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo1.97e25f38.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">Say goodbye to inefficiencies</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap; overflow:visible; text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+
+        <div class="explain-item d-flex align-items-center text-start" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo2.d48af97a.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">No more mess</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap;  text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+
+        <div class="explain-item d-flex align-items-center text-start mb-4" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo1.97e25f38.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">Reduced Waste</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap; overflow:visible; text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+        <div class="explain-item d-flex align-items-center text-start" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo2.d48af97a.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">No more mess</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap;  text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+        <div class="explain-item d-flex align-items-center text-start mb-4" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo1.97e25f38.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">Say goodbye to inefficiencies</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap; overflow:visible; text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+
+        <div class="explain-item d-flex align-items-center text-start" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo2.d48af97a.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">No more mess</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap;  text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+
+        <div class="explain-item d-flex align-items-center text-start mb-4" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo1.97e25f38.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">Reduced Waste</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap; overflow:visible; text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+        <div class="explain-item d-flex align-items-center text-start" style="max-width: 600px;">
+            <div class="icon me-3">
+                <img src="https://www.efloz.com/ /_next/image?url=%2F %2F_next%2Fstatic%2Fmedia%2Flogo2.d48af97a.png&w=3840&q=75"
+                    alt="Icon" class="img-fluid" style="width: 60px; height: auto;">
+            </div>
+            <div class="explain-text">
+                <h4 class="fw-bold">No more mess</h4>
+                <p class="mb-0 text-truncate"
+                    style="max-width: 500px; line-height: 1.5; white-space: nowrap;  text-overflow: ellipsis;">
+                      integrates all your business processes into one platform. <br> Say goodbye to manual work
+                    and inefficiencies.
+                </p>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="button" class="btn btn-danger mt-5">Contact Sales</button>
+                </div>
+    </div> -->
+
+    <div class="icon-explain text-center py-5">
+        <style>
+            .icon-explain {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                background: #fff2ee;
+            }
+    
+            /* Heading Style */
+            .why-gold h1 {
+                font-weight: 600;
+                font-size: 28px;
+                text-align: center;
+                color: #000;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 15px;
+            }
+    
+            /* Paragraph Style */
+            .why-gold p {
+                font-size: 16px;
+                line-height: 1.6;
+                color: #333;
+                font-family: 'Poppins', sans-serif;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+    
+            /* Container for Each Feature */
+            .explain-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 15px;
+                justify-content: center;
+            }
+    
+            /* Icon Image Styling */
+            .icon img {
+                width: 60px;
+                height: auto;
+            }
+    
+            /* Feature Title */
+            .explain-text h4 {
+                font-weight: 600;
+                font-size: 20px;
+                color: #d81159;
+                margin-top: 10px;
+            }
+    
+            /* Feature Description */
+            .explain-text p {
+                font-size: 16px;
+                line-height: 1.5;
+                color: #000;
+                margin: 0;
+                text-align: justify;
+            }
+    
+            /* Button Styling */
+            .btn-danger {
+                background-color: #dc3545;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 6px;
+                margin-top: 20px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+    
+            .btn-danger:hover {
+                background-color: #b02a37;
+            }
+    
+            /* Responsive Design */
+            @media (min-width: 768px) {
+                .explain-item {
+                    flex-direction: row;
+                    text-align: left;
+                    align-items: center;
+                    
+                }
+    
+                .icon {
+                    margin-right: 15px;
+                }
+    
+                .explain-text {
+                    text-align: left;
+                    
+                }
+            }
+        </style>
+    
+        <div class="why-gold">
+            <h1><img height="60px" src="./img/why-logo.svg" alt="why">do you need our <br> software for your Gold <br> business...</h1>
+            <p>
+                Running a Gold business involves juggling multiple tasks: inventory management,
+                order processing, accounting, and more. That’s where <strong>VOSA</strong> comes in.
+                Here’s why it’s essential for your success:
+            </p>
+        </div>
+    
+        <div class="explain-item">
+            <div class="icon">
+                <img src="./img/Product-logo1.png" alt="Icon">
+                    
+            </div>
+            <div class="explain-text">
+                <h4>Say goodbye to inefficiencies</h4>
+                <p>Eliminate manual errors and streamline your loan process with our automated, secure, and user-friendly solution. Manage approvals, interest calculations, and repayments effortlessly!</p>
+            </div>
+        </div>
+    
+        <div class="explain-item">
+            <div class="icon">
+                <img src="./img/Product-logo2.png"
+                    alt="Icon">
+            </div>
+            <div class="explain-text">
+                <h4>No more mess</h4>
+                <p>Effortlessly manage loan approvals, interest calculations, and repayments with our smart, secure, and automated Gold Loan Management Software. Stay ahead with real-time notifications, accurate EMI tracking, and seamless customer data management.</p>
+            </div>
+        </div>
+     
+        <div class="explain-item" id="explain-item">
+            <div class="icon">
+                <img src="./img/Product-logo3.png"
+                    alt="Icon">
+            </div>
+            <div class="explain-text">
+                <h4>Reduced Waste</h4>
+                <p>  integrates all your business processes into one platform. No more manual work and inefficiencies.</p>
+                 <!-- <p>  seamlessly integrates all your business processes into a single, efficient platform. Say goodbye to manual work, redundancies, and inefficiencies. Automate tasks, streamline operations, and focus on what truly matters—growing your business with ease.</p> -->
+            </div>
+        </div>
+    <!-- <style>
+        #explain-item {
+            margin-right: 335px;
+        }
+    </style> -->
+        <div class="explain-item" id="explain-item">
+            <div class="icon">
+                <img src="./img/Product-logo4.png"
+                    alt="Icon">
+            </div>
+            <div class="explain-text">
+                <h4>Happy Customers</h4>
+                <p>  integrates all your business processes into one platform.  No more manual work and inefficiencies.</p>
+            </div>
+        </div>
+    
+        <div class="explain-item">
+            <div class="icon">
+                <img src="./img/Product-logo5.png"
+                    alt="Icon">
+            </div>
+            <div class="explain-text">
+                <h4>Boost Productivity & Profitability!</h4>
+                <p>Streamline loan processing, eliminate errors, and optimize operations with our automated Gold Loan Management Software. Work smarter, save time, and maximize profits! </p>
+            </div>
+        </div>
+    <a href="https://wa.me/917358218282"
+    target="_blank"><button type="button" class="btn" style="background-color: #e0145c; color: #fff;">Contact Sales</button>
+    </a>
+    </div>
+    
+
+    <section class="key-feature text-center d-flex flex-column align-items-center justify-content-center py-5">
+        <style>
+            .key-feature {
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px;
+                background: linear-gradient(1turn, #fff 50%, #d81159 50%) !important;
+                border-radius: 12px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            .key-feature header h2 {
+                display: flex;
+                font-weight: 600;
+                font-size: 28px;
+                text-align: center;
+                color: #ffffff;
+            }
+    
+            .feature-box {
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                width: 70%;
+                text-align: left;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+    
+            .feature-box h4 {
+                font-size: 24px;
+                text-align: center;
+                color: #f03a47;
+                font-weight: 600;
+            }
+    
+            .feature-box ul {
+                padding-left: 20px;
+                list-style-type: disc; /* Ensures dark dots */
+                color: black;
+            }
+    
+            .feature-box ul li {
+                margin-bottom: 10px;
+                text-align: start;
+                font-size: 16px;
+                line-height: 1.6;
+                color: #000;
+            }
+    
+            .book-demo-btn {
+                background-color: #dc3545;
+                color: white;
+                font-size: 16px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+    
+            .book-demo-btn:hover {
+                background-color: #b02a37;
+            }
+
+             /* Responsive Design */
+             @media (max-width: 768px) {
+                .key-feature {
+                    padding: 20px;
+                }
+    
+                .key-feature header h2 {
+                    font-size: 22px;
+                }
+    
+                .feature-box {
+                    width: 100%;
+                    padding: 20px;
+                }
+    
+                .feature-box h4 {
+                    font-size: 20px;
+                }
+    
+                .feature-box ul li {
+                    font-size: 14px;
+                }
+    
+                .book-demo-btn {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 15px;
+                }
+            }
+        </style>
+    
+        <header>
+            <h2><img style="transform: translateX(79px); height: 40px;"   src="./img/what-logo.svg" alt="what">key features does<br>
+                  offer to streamline both<br>
+                restaurant operations and POS?</h2>
+        </header>
+    
+        <div class="feature-box">
+            <h4>Gold Software</h4>
+            <h4 style="font-size: 20px; text-align: center; font-weight: 600; color: #000;">Management Solution</h4>
+            <ul>
+                <li>
+                    <p><strong class="text-dark">Essential for Gold Trading:</strong> A robust gold software management system is crucial for success in the precious metals industry. It ensures smooth and secure transactions, helping businesses stay competitive.</p>
+                </li>
+                <li>
+                    <p><strong>Optimized operations:</strong> Automates gold trading, billing, and inventory management to enhance efficiency and accuracy. With real-time updates, businesses can minimize errors and maximize profitability.</p>
+                </li>
+                <li>
+                    <p><strong>Streamlined workflows:</strong> Simplifies gold transaction processes, from purchasing to selling, ensuring a seamless and productive workflow for traders and investors.</p>
+                </li>
+                <li>
+                    <p><strong>Real-time tracking:</strong> Monitors gold inventory, market prices, and transaction data in real time, allowing businesses to make informed decisions and optimize their trading strategies.</p>
+                </li>
+                <li>
+                    <p><strong>Integrated solutions:</strong> Connects all aspects of gold trading operations, including accounting, compliance, and customer management, into a single, cohesive system.</p>
+                </li>
+                <li>
+                    <p><strong>Customer satisfaction:</strong> Enhances the client experience with fast, accurate transactions, transparent pricing, and secure record-keeping, ensuring trust and long-term business relationships.</p>
+                </li>
+            </ul>
+        </div>
+    <!-- contectForm -->
+       <a href="contact.html#contectForm"><button type="button"  class="btn mt-5" style="background-color: #e0145c; color: #fff;">Book Demo</button></a> 
+    </section>
+    
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        $(document).ready(function () {
+            // Initialize the Owl Carousel
+            $('.brand_active').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplaySpeed: 1500,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1024: {
+                        items: 6
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- Wave Animation Section Before Footer -->
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="row g-5" style="display: flex; align-items: flex-start; justify-content: space-around;">
+                <!-- Google Map -->
+                <div class="col-lg-3 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27996.49270843182!2d77.7733891115278!3d8.719129084984187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b040d055a212ee3%3A0xb6adb845063d46b6!2sBhogar%20Bakers!5e0!3m2!1sen!2sin!4v1733983836463!5m2!1sen!2sin"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Contact Us</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>158/6, R.J.S. Complex,</p>
+                    <p class="mb-2" style="font-size: 15px; margin-left: 31px;"> KTC Nager, Tirunelveli - 627011.</p>
+                    <p class="mb-2">
+                        <i class="fa fa-mobile me-3" aria-hidden="true"></i>
+                        <a href="tel:+917358218282" style="text-decoration: none; color: #777777;">+91 7358218282</a>
+                    </p>
+                    <!-- <p class="mb-2">
+                        <i class="fas fa-globe me-3"></i>
+                        <a href="https://www.vosatech.com/" style="text-decoration: none; color: #777777;"
+                            target="_blank">https://www.vosatech.com/</a>
+                    </p> -->
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://x.com/VosaTech" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.facebook.com/profile.php?id=61569960538255" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.linkedin.com/in/vosa-tech-4b28ab331/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.instagram.com/vosa.tech/?igsh=MXRndWJpbGdtZ255Zg%3D%3D#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle" href="https://wa.me/917358218282"
+                            target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column">
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="service.html">Our Services</a>
+                        <a class="btn btn-link" href="portfolio.html">Portfolio</a>
+                        <a class="btn btn-link" href="internship.html">Internship</a>
+                        <a class="btn btn-link" href="products.html">Product</a>
+                        <a class="btn btn-link" href="gallary.html">Gallary</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright text-center">
+            <p class="mb-0">&copy; <a href="#">2024 | VOSA Tech IT Services. </a> All Rights Reserved. </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
