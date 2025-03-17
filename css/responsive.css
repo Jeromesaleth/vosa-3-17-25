@@ -1,0 +1,283 @@
+/* mobile screen size start */
+
+/* @media (min-width : 0px) and (max-width : 600px) */
+@media  (max-width : 768px)
+ { 
+    /* navabr */
+    .navbar-nav {
+        margin-left: 196px;
+    }
+
+ 
+    /*  start index page */
+    .banner-s{
+        font-size: 8px
+    }
+    .banner-b{
+        font-size: 13px
+    }
+    /* #head1,#head2 {
+
+    }
+    #head2 {
+
+    } */
+    /* #head3{
+        font-size: 10px;
+    }
+    #head6 {
+        line-height: o.8;
+    } */
+    /* .head5-6 h5 {
+        font-size: 50px;
+    } */
+    .single_brand img {
+        display: flex;
+    }
+    .pagecenter {
+        margin-top: -16% !important;
+        margin-bottom: -15% !important;
+    }
+   
+       /*  end index page */
+/* ******************************************* */
+
+          /*  start about page */
+    .we-can {
+        height: 0px;
+        width: 100%;
+    }
+.get-lets {
+
+}
+          .get-lets  button {
+            margin-top: 49px;
+            width: 98px;
+            height: 29px;
+            font-size: 15px;
+            font-weight: 700; 
+            margin-left: 42px;
+margin-bottom: 6px;
+
+            
+            }
+            .contents h1 {
+                font-size: small;
+            }
+
+            /* start imges */
+            .Industries-img {
+                display: none;
+            }
+            .achivement-img img {
+                display: none;
+            }
+            .achivement-form input , .achivement-form select{
+                width: 263px;
+                margin-left: 21px;
+            }
+            .achivement-form1 input{
+                width: 263px;
+        margin-left: 21px;
+            }
+            /* end images */
+            .sendWhatsApp-btn {
+                position: absolute;
+                right: 100px;
+               
+                
+                
+              
+                
+            }
+            #sendWhatsApp { 
+  /* height: 20px;
+                width: 100px;
+              
+                font-size:11px; */
+                /* height: 20px;
+        width: 100px;
+        display: flex;
+        font-size: 11px;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-88px); */
+        height: 20px;
+                width: 100px;
+                display: flex;
+                font-size: 11px;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(6px);
+               
+            }
+            #sendWhatsApp1 {
+                height: 20px;
+                width: 100px;
+                display: flex;
+                font-size: 10px;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(-111px);
+            }
+            .sendWhatsApp {
+                transform: translateY(95px);
+                margin-left: 208px;
+                
+            }
+            .align-btn {
+                margin-top: 429px;                
+        transform: translateX(-59px);
+            }
+            .lg-square {
+                width : 
+            }
+            #diplayHide {
+                display: none;
+            }
+            .row-reverse {
+               flex-direction: row-reverse;
+            }
+.gradient-primary {
+    height: none;
+}
+           .gradient-primary .poster2 h6,h1 {
+                font-size: 10px;
+            }
+            .gradient-primary .rocket-img img {
+                height: 63px;
+            }
+            .Project-btn{
+
+            }
+            .Project-btn button {
+                font-size: 9px;
+                height: 35px;
+                width: 85px;
+                display: flex;
+                justify-content: center;
+                font-weight: 200;
+                align-items: center;
+            }
+           .brand_wrap {
+            width: 10px;
+           }
+           .div-block {
+            display: grid;
+        grid-template-columns: repeat(1,1fr); /* Single column layout */
+        gap: 20px; /* Keep the gap between cards */
+        }
+        .card {
+            margin-bottom: 10px;
+        }
+
+        /* conatct page start */
+        #align-locat {
+            margin-left: -109px;
+            display: flex;
+    
+            align-items: center;
+            justify-content: center;
+
+        }
+         /* conatct page end */
+        
+         .icon-size {
+            margin-left: 19px;
+         }
+         /* *************************************** */
+
+         /* internship page start */
+
+         /* in inside page */
+         
+          /* internship page end */
+           /* *************************************** */
+} 
+ /*  end mobile scree size  */
+
+/* ******************************************* */
+
+/* start  tab screen size*/
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .navbar-nav {
+        margin-left: 545px;
+    }
+    
+        .head5-6 h5, .head5-6 h6 {
+            font-size: 17px !important;
+        }
+
+    .pagecenter {
+        margin-top: -5% !important;
+        /* margin-bottom: -6 !important; */
+    } 
+    .footer {
+        margin-top: 10% !important;
+    }
+    .sendWhatsApp-btn {
+        margin-right: 217px;
+    }
+}
+
+/* end  tab screen size */
+
+/* ******************************************* */
+
+/* start laptop screen size */
+@media (min-width : 1024px) and (max-width : 1440px) {
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    .navbar-nav {
+        /* margin-left: 147px; */ 
+    }
+    .navbar-expand-lg .navbar-collapse {
+        background-color: rgb(8, 22, 211);
+    }
+    .pagecenter {
+        margin-top: -16% !important;
+        margin-bottom: -15% !important;
+    }
+}
+
+
+
+
+
+
+
+
+/* ******************************************* */
+
+/*  start services page */
+.sectionName  {
+    font-size: 10px;
+}
+
+ /*  end services page */
+ /* ******************************************* */
+
+/*  start portfolio page */
+
+/* 
+    .container div[style*="display: grid"] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container div[style*="display: grid"] > div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .container div[style*="display: grid"] img {
+      height: auto;
+    }
+   */
+
+ /*  end portfolio page */
+ /* ******************************************* */
